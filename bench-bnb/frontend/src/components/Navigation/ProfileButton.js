@@ -29,7 +29,7 @@ function ProfileButton({ user }) {
         e.preventDefault();
         dispatch(sessionActions.logout());
     };
-    debugger
+
     return (
         <>
             <button onClick={openMenu}>

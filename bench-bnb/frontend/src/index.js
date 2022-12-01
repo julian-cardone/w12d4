@@ -78,7 +78,6 @@ function Root() {
 }
 
 const renderApplication = () => {
-  debugger
   ReactDOM.render(
     <React.StrictMode>
       <Root />
