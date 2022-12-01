@@ -1,0 +1,25 @@
+.indexdiv {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-auto-rows: var( --breakpoint-grid_auto-rows, minmax(-webkit-min-content,-webkit-max-content) );
+    grid-auto-rows: var( --breakpoint-grid_auto-rows, minmax(min-content,max-content) );
+    grid-gap: var(--breakpoint-grid_row-gap,0) var(--breakpoint-grid_column-gap,0);
+    grid-template-columns: var( --breakpoint-grid_column-template, repeat(var(--breakpoint-grid_columns,1),minmax(0,1fr)) );
+}
+
+.benchlistitemdiv {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.benchesheader{
+    font-size: 50px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.benchlistitemdiv > p{
+    padding-left: 10px;
+}

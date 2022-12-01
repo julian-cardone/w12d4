@@ -3,19 +3,26 @@ import csrfFetch from "./csrf"
 export const SET_BENCHES = "benches/SET_BENCHES"
 export const ADD_BENCH = "benches/ADD_BENCH"
 
-export const setBenches = (benches) =>{
+const setBenches = (benches) =>{
   return {
     type: SET_BENCHES,
     benches
   }
 }
 
-export const addBench = (bench) =>{
+const addBench = (bench) =>{
   return {
     type: ADD_BENCH,
     bench
   }
 }
+
+//selector
+export const getBenches = (state) => 
+  state.benches ? Object.values(state.benches) : [];
+
+export const getBench = (benchId) => (state) => 
+  state.benches ? state.benches[benchId] : null;
 
 export const fetchBenches = () => async (dispatch) =>{
   const res = await csrfFetch("/api/benches")
