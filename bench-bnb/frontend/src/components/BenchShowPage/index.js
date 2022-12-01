@@ -18,7 +18,6 @@ export default function BenchShowPage(){
   return (
     <div className="benchshowdiv">
       <h1>{bench.title}</h1>
-      <Link to="/">Index Page</Link>
       <h2>Details</h2>
       <p>{bench.description}</p>
       <ul>
@@ -31,6 +30,7 @@ export default function BenchShowPage(){
         <li> Longitude:
           {bench.lng}
         </li>
+      <Link to="/">Index Page</Link>
       </ul>
     </div>
   )

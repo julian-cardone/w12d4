@@ -2,6 +2,7 @@ import csrfFetch from "./csrf"
 
 export const SET_BENCHES = "benches/SET_BENCHES"
 export const ADD_BENCH = "benches/ADD_BENCH"
+export const SET_BENCH = "benches/SET_BENCH"
 
 const setBenches = (benches) =>{
   return {
